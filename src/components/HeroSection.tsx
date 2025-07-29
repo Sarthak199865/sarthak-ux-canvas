@@ -31,7 +31,7 @@ const HeroSection = () => {
       if (visibleWords < words.length) {
         setVisibleWords(prev => prev + 1);
       }
-    }, 150); // Faster, more rhythmic timing
+    }, 120); // Smooth, natural timing
 
     return () => clearTimeout(timer);
   }, [visibleWords, words.length]);
@@ -48,12 +48,11 @@ const HeroSection = () => {
                   key={index}
                   className={`${word.className} ${
                     index < visibleWords 
-                      ? 'opacity-100 animate-fade-in-up' 
+                      ? 'opacity-100' 
                       : 'opacity-0'
-                  } inline-block mr-3`}
+                  } inline-block mr-3 transition-all duration-500 ease-out`}
                   style={{
-                    animationDelay: `${index * 0.15}s`,
-                    animationFillMode: 'forwards'
+                    transitionDelay: `${index * 100}ms`
                   }}
                 >
                   {word.text}
