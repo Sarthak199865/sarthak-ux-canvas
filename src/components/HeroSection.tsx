@@ -42,7 +42,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Hero Text */}
           <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-montreal leading-tight">
+            <h1 className="text-2xl font-montreal leading-tight">
               {words.map((word, index) => (
                 <span
                   key={index}
