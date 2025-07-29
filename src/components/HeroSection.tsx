@@ -39,9 +39,9 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center pt-20">
       <div className="max-w-7xl mx-auto px-6 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="flex justify-center">
           {/* Hero Text */}
-          <div className="space-y-8">
+          <div>
             <h1 className="text-2xl font-montreal leading-tight">
               {words.map((word, index) => (
                 <span
@@ -60,34 +60,6 @@ const HeroSection = () => {
                 </span>
               ))}
             </h1>
-            
-            {/* CTA Button */}
-            <div 
-              className={`${
-                visibleWords >= words.length 
-                  ? 'opacity-100 animate-fade-in-up' 
-                  : 'opacity-0'
-              }`}
-              style={{
-                animationDelay: `${words.length * 0.15 + 0.5}s`,
-                animationFillMode: 'forwards'
-              }}
-            >
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="cta-button font-montreal font-medium text-lg px-8 py-6 border-2 border-portfolio-black text-portfolio-black hover:bg-portfolio-black hover:text-white transition-all duration-300 rounded-lg"
-              >
-                View My Work
-              </Button>
-            </div>
-          </div>
-
-          {/* Picture Placeholder */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="w-72 h-72 lg:w-80 lg:h-80 bg-muted rounded-2xl flex items-center justify-center border-2 border-dashed border-border">
-              <span className="text-muted-foreground font-montreal">Your Picture Here</span>
-            </div>
           </div>
         </div>
       </div>
