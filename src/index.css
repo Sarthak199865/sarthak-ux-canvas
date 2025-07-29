@@ -142,6 +142,10 @@
     @apply w-full;
   }
 
+  .project-card:hover {
+    @apply shadow-sm;
+  }
+
   .cta-button:hover {
     @apply transform scale-105;
   }
