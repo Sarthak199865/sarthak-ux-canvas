@@ -20,6 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'montreal': ['Neue Montreal', 'system-ui', 'sans-serif'],
+				'cormorant': ['Cormorant', 'serif'],
 			},
 			colors: {
 				'portfolio-black': 'hsl(var(--portfolio-black))',
