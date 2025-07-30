@@ -42,6 +42,9 @@ const ProjectsSection = () => {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-xl font-montreal font-medium text-portfolio-black mb-12">
+          Selected works
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <ProjectCard

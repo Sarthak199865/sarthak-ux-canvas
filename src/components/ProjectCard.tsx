@@ -11,7 +11,7 @@ const ProjectCard = ({ title, subtitle, figmaLink, imageUrl }: ProjectCardProps)
       href={figmaLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="project-card group block bg-white rounded-xl overflow-hidden border border-border/50 hover:shadow-sm transition-all duration-300"
+      className="project-card group block bg-white rounded-xl overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300"
     >
       {/* Project Image */}
       <div className="aspect-[4/3] bg-muted flex items-center justify-center overflow-hidden">
@@ -33,7 +33,7 @@ const ProjectCard = ({ title, subtitle, figmaLink, imageUrl }: ProjectCardProps)
       
       {/* Project Content */}
       <div className="p-6 space-y-3">
-        <h3 className="project-title text-xl font-montreal font-medium text-portfolio-black transition-colors duration-200 relative">
+        <h3 className="project-title text-xl font-montreal font-medium text-portfolio-black">
           {title}
         </h3>
         <p className="text-portfolio-gray font-montreal leading-relaxed text-sm">

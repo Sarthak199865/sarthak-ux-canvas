@@ -8,7 +8,7 @@ const HeroSection = () => {
     { text: "Hi", className: "text-portfolio-gray" },
     { text: "I", className: "text-portfolio-gray" },
     { text: "am", className: "text-portfolio-gray" },
-    { text: "Sarthak,", className: "text-portfolio-black font-medium" },
+    { text: "Sarthak,", className: "text-portfolio-gray" },
     { text: "a", className: "text-portfolio-black" },
     { text: "product", className: "text-portfolio-black" },
     { text: "designer", className: "text-portfolio-black" },
@@ -29,6 +29,11 @@ const HeroSection = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (visibleWords < words.length) {
+        // Play typewriter sound
+        const audio = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaBC2Dy/DBRG');
+        audio.volume = 0.3;
+        audio.play().catch(() => {}); // Ignore errors if audio fails
+        
         setVisibleWords(prev => prev + 1);
       }
     }, 120); // Smooth, natural timing
