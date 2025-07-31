@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import AnimatedMesh from "@/components/AnimatedMesh";
 
 const HeroSection = () => {
   const [visibleWords, setVisibleWords] = useState(0);
@@ -54,6 +55,8 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex items-center pt-20 relative">
+      {/* Animated Mesh Background */}
+      <AnimatedMesh />
       {/* Top Info Bar */}
       <div className="absolute top-24 left-0 right-0 max-w-7xl mx-auto px-6 z-10">
         <div className="flex justify-between items-center">
