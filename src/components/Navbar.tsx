@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo - Editable */}
-        <div className="font-montreal font-medium text-xl text-portfolio-black">
+        <div className="font-cormorant font-medium text-xl text-portfolio-black">
           {isEditing ? (
             <input
               type="text"
@@ -47,7 +47,7 @@ const Navbar = () => {
             <a
               key={item}
               href={`#${item}`}
-              className="nav-link relative font-montreal text-portfolio-black hover:text-portfolio-gray hover:italic transition-all duration-200 capitalize"
+              className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray hover:italic transition-all duration-200 capitalize"
             >
               {item}
             </a>
