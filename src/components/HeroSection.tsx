@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   const [visibleWords, setVisibleWords] = useState(0);
+  const [currentTime, setCurrentTime] = useState(new Date());
+  const [temperature, setTemperature] = useState("24°C");
   
   const words = [
     { text: "Hi", className: "text-portfolio-gray" },
@@ -26,6 +28,15 @@ const HeroSection = () => {
     { text: "problems.", className: "text-portfolio-black" }
   ];
 
+  // Time update effect
+  useEffect(() => {
+    const timeInterval = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timeInterval);
+  }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       if (visibleWords < words.length) {
@@ -42,7 +53,30 @@ const HeroSection = () => {
   }, [visibleWords, words.length]);
 
   return (
-    <section className="min-h-screen flex items-center pt-20">
+    <section className="min-h-screen flex items-center pt-20 relative">
+      {/* Top Info Bar */}
+      <div className="absolute top-6 left-0 right-0 max-w-7xl mx-auto px-6">
+        <div className="flex justify-between items-center">
+          {/* Location & Temperature */}
+          <div className="text-xs font-mono text-portfolio-gray">
+            Bengaluru, {temperature}
+          </div>
+          
+          {/* Date & Time */}
+          <div className="text-xs font-mono text-portfolio-gray">
+            {currentTime.toLocaleDateString('en-GB', { 
+              day: '2-digit', 
+              month: '2-digit', 
+              year: 'numeric' 
+            })} • {currentTime.toLocaleTimeString('en-US', { 
+              hour12: false,
+              hour: '2-digit',
+              minute: '2-digit'
+            })}
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="flex justify-center">
           {/* Hero Text */}
