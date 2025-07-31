@@ -6,6 +6,7 @@ const HeroSection = () => {
   const [visibleWords, setVisibleWords] = useState(0);
   const [currentTime, setCurrentTime] = useState(new Date());
   const [temperature, setTemperature] = useState("24°C");
+  const [startTyping, setStartTyping] = useState(false);
   
   const words = [
     { text: "Hi", className: "text-portfolio-gray" },
@@ -29,6 +30,15 @@ const HeroSection = () => {
     { text: "problems.", className: "text-portfolio-black" }
   ];
 
+  // Start typing after 4 seconds
+  useEffect(() => {
+    const startTimer = setTimeout(() => {
+      setStartTyping(true);
+    }, 4000);
+
+    return () => clearTimeout(startTimer);
+  }, []);
+
   // Time update effect
   useEffect(() => {
     const timeInterval = setInterval(() => {
@@ -39,6 +49,8 @@ const HeroSection = () => {
   }, []);
 
   useEffect(() => {
+    if (!startTyping) return; // Don't start typing until startTyping is true
+    
     const timer = setTimeout(() => {
       if (visibleWords < words.length) {
         // Play typewriter sound
@@ -51,7 +63,7 @@ const HeroSection = () => {
     }, 120); // Smooth, natural timing
 
     return () => clearTimeout(timer);
-  }, [visibleWords, words.length]);
+  }, [visibleWords, words.length, startTyping]);
 
   return (
     <section className="min-h-screen flex items-center pt-20 relative">
