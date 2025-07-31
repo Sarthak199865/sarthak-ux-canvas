@@ -55,7 +55,7 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center pt-20 relative">
       {/* Top Info Bar */}
-      <div className="absolute top-6 left-0 right-0 max-w-7xl mx-auto px-6">
+      <div className="absolute top-24 left-0 right-0 max-w-7xl mx-auto px-6 z-10">
         <div className="flex justify-between items-center">
           {/* Location & Temperature */}
           <div className="text-xs font-mono text-portfolio-gray">
