@@ -47,7 +47,7 @@ const Navbar = () => {
             <a
               key={item}
               href={`#${item}`}
-              className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray hover:italic transition-all duration-200 capitalize"
+              className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
             >
               {item}
             </a>
