@@ -7,7 +7,6 @@ const HeroSection = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [temperature, setTemperature] = useState("24°C");
   const [startTyping, setStartTyping] = useState(false);
-  const [showCursor, setShowCursor] = useState(true);
   
   const words = [
     { text: "Hi", className: "text-portfolio-gray" },
@@ -49,30 +48,15 @@ const HeroSection = () => {
     return () => clearInterval(timeInterval);
   }, []);
 
-  
-  // Cursor blinking effect
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setShowCursor(prev => !prev);
-    }, 530); // Blink every 530ms for natural feel
-
-    return () => clearInterval(cursorInterval);
-  }, []);
 
   useEffect(() => {
     if (!startTyping) return; // Don't start typing until startTyping is true
     
     const timer = setTimeout(() => {
       if (visibleWords < words.length) {
-        // Play more realistic typewriter sound - deeper, more mechanical
-        const audio = new Audio('data:audio/wav;base64,UklGRu4CAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YcoCAACBhYeFbFtfdJOstY9hNjdhntjbp2AaBT2a2u2+ciMFLH/N8d6JOQ0caLr2459NDQZQp+TxtmEcAzaQ2e/NeSQFJXbH8N2QQAcTXrfq66hVFAhGnuLwvWEYASyEy/HCQS0GOXjH7NmMOA0aZ7b64aRXFApGneDvwGAYASyDy/HCQS0GOHfH69iPPw0aZ7b64aRXFApGnuTuwGEYBC2Dy/HDQy0GOXjH7NiNOA0aZrX54aRXFQpGnuLwvWEYASyEy/DFQi0GOXjI69eOOA4aZrj24qVWFAtGnuLwvWEZAS2Dy/HDQy0GOHfH7NmNOA4ZZ7X54aRXFQpGnuPvwGEZBC2Dy/HDQy0GOXfI7NmNOQ0aZrj54qVWFQtGnuLwvWIZAS2Ey/DDQy0GOXfH69mNOQ0aZrj54qVWFQtGnuLwvWIZAS2Ey/DDQy0GOXfH69mNOQ0aZrj54qVWFQtGnuLwvWIZAS2Ey/DDQy0GOXfH69mNOQ0aZrj54qVWFQtGnuLwvWIZAS2Ey/DDQy0GOXfH69mNOQ0aZrj54qVWFQtGnuLwvWIZAS2Ey/DDQy0GOXfH69mNOQ0aZrj54qVWFQtGnuLwvWIZAS2Ey/DDQy0GOXfH69mNOQ0aZrj54qVWFQtG');
-        audio.volume = 0.15; // Softer volume for a more pleasant experience
-        audio.playbackRate = 0.8; // Slightly slower for more realistic sound
-        audio.play().catch(() => {}); // Ignore errors if audio fails
-        
         setVisibleWords(prev => prev + 1);
       }
-    }, 150); // Slightly slower timing for more natural typing
+    }, 150);
 
     return () => clearTimeout(timer);
   }, [visibleWords, words.length, startTyping]);
@@ -124,19 +108,6 @@ const HeroSection = () => {
                   {word.text}
                 </span>
               ))}
-              {/* Blinking cursor that appears during and after typing */}
-              {startTyping && (
-                <span 
-                  className={`inline-block w-0.5 h-6 bg-portfolio-black ml-1 ${
-                    showCursor ? 'opacity-100' : 'opacity-0'
-                  } transition-opacity duration-100`}
-                  style={{
-                    animation: 'blink 1.2s infinite'
-                  }}
-                >
-                  |
-                </span>
-              )}
             </h1>
           </div>
         </div>
