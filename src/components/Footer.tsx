@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, FileText, PenTool, Palette } from "lucide-react";
+import { Linkedin, Twitter, Mail, Edit3, Grid3X3 } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
@@ -14,17 +14,17 @@ const Footer = () => {
     },
     {
       name: "Substack",
-      icon: FileText,
+      icon: Mail,
       href: "#",
     },
     {
       name: "Medium",
-      icon: PenTool,
+      icon: Edit3,
       href: "#",
     },
     {
       name: "Behance",
-      icon: Palette,
+      icon: Grid3X3,
       href: "#",
     },
   ];
