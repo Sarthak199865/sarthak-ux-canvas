@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [logo, setLogo] = useState("Sarthak");
@@ -44,13 +45,23 @@ const Navbar = () => {
         {/* Navigation Items */}
         <div className="flex items-center space-x-8">
           {navItems.map((item) => (
-            <a
-              key={item}
-              href={`#${item}`}
-              className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
-            >
-              {item}
-            </a>
+            item === 'resume' ? (
+              <Link
+                key={item}
+                to="/resume"
+                className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
+              >
+                {item}
+              </Link>
+            ) : (
+              <a
+                key={item}
+                href={`#${item}`}
+                className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
+              >
+                {item}
+              </a>
+            )
           ))}
         </div>
       </div>
