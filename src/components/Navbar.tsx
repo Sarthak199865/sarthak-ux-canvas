@@ -56,7 +56,7 @@ const Navbar = () => {
             ) : (
               <a
                 key={item}
-                href={`#${item}`}
+                href={item === 'work' ? '#work' : `#${item}`}
                 className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
               >
                 {item}

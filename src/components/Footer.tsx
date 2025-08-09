@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Mail, Edit3, Grid3X3 } from "lucide-react";
+import { Linkedin, Edit3, Grid3X3, Mail } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
@@ -16,6 +16,11 @@ const Footer = () => {
       name: "Behance",
       icon: Grid3X3,
       href: "https://www.behance.net/sarthakpany",
+    },
+    {
+      name: "Gmail",
+      icon: Mail,
+      href: "mailto:Sarthaksidharth65@gmail.com",
     },
   ];
 

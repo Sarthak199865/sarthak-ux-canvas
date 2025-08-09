@@ -41,7 +41,7 @@ const AboutSection = () => {
             </p>
             
             <p className="text-portfolio-black leading-relaxed">
-              Apart from designing interfaces, I enjoy reading philosophy, science, and biographies; soul-searching through writing; exploring music—from Indian classical to Western counterpoint; transformed by thinking; running and weight training; sketching; and owning a small terrace garden.
+              Apart from designing interfaces, I enjoy reading philosophy, science, and biographies; soul-searching through writing; exploring music—from Indian classical to Western country—that transforms my thinking; running and weight training; sketching; and tending a small terrace garden.
             </p>
 
             {/* Social Links */}

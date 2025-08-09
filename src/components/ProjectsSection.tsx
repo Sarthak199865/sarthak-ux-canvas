@@ -47,7 +47,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section id="work" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-xl font-montreal font-medium text-portfolio-black mb-12">
           Selected works
