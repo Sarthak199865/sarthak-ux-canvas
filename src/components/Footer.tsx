@@ -5,27 +5,17 @@ const Footer = () => {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "#", // You can replace with your actual links
-    },
-    {
-      name: "Twitter",
-      icon: Twitter,
-      href: "#",
-    },
-    {
-      name: "Substack",
-      icon: Mail,
-      href: "#",
+      href: "https://www.linkedin.com/in/sarthak-sidharth-pany-143a83167/",
     },
     {
       name: "Medium",
       icon: Edit3,
-      href: "#",
+      href: "https://medium.com/@sarthaksidharth",
     },
     {
       name: "Behance",
       icon: Grid3X3,
-      href: "#",
+      href: "https://www.behance.net/sarthakpany",
     },
   ];
 
