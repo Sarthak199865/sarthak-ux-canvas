@@ -33,36 +33,61 @@ const Navbar = () => {
               autoFocus
             />
           ) : (
-            <span 
+            <Link
+              to="/"
               onClick={handleLogoEdit}
               className="cursor-pointer hover:text-portfolio-gray transition-colors duration-200"
             >
               {logo}
-            </span>
+            </Link>
           )}
         </div>
 
         {/* Navigation Items */}
         <div className="flex items-center space-x-8">
-          {navItems.map((item) => (
-            item === 'resume' ? (
-              <Link
-                key={item}
-                to="/resume"
-                className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
-              >
-                {item}
-              </Link>
-            ) : (
-              <a
-                key={item}
-                href={item === 'work' ? '#work' : `#${item}`}
-                className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
-              >
-                {item}
-              </a>
-            )
-          ))}
+          {navItems.map((item) => {
+            if (item === 'resume') {
+              return (
+                <Link
+                  key={item}
+                  to="/resume"
+                  className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
+                >
+                  {item}
+                </Link>
+              );
+            } else if (item === 'about') {
+              return (
+                <Link
+                  key={item}
+                  to="/about"
+                  className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
+                >
+                  {item}
+                </Link>
+              );
+            } else if (item === 'work') {
+              return (
+                <Link
+                  key={item}
+                  to="/#work"
+                  className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
+                >
+                  {item}
+                </Link>
+              );
+            } else {
+              return (
+                <a
+                  key={item}
+                  href={`#${item}`}
+                  className="nav-link relative font-cormorant text-portfolio-black hover:text-portfolio-gray transition-all duration-200 capitalize"
+                >
+                  {item}
+                </a>
+              );
+            }
+          })}
         </div>
       </div>
     </nav>
