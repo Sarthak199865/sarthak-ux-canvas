@@ -21,6 +21,7 @@ export default {
 			fontFamily: {
 				'montreal': ['Neue Montreal', 'system-ui', 'sans-serif'],
 				'cormorant': ['Cormorant', 'serif'],
+				'fira-mono': ['Fira Mono', 'monospace'],
 			},
 			colors: {
 				'portfolio-black': 'hsl(var(--portfolio-black))',

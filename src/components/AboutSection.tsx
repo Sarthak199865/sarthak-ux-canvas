@@ -27,7 +27,7 @@ const AboutSection = () => {
           <div className="flex justify-center md:justify-start">
             <div className="w-64 h-64 rounded-lg overflow-hidden bg-portfolio-gray/10">
               <img 
-                src="/lovable-uploads/e22bfba9-fde4-4a0e-987c-90dc3d143949.png" 
+                src="/lovable-uploads/f5e283c1-24ee-45e8-b5b7-b92272f8c36a.png" 
                 alt="Sarthak Sidharth Pany"
                 className="w-full h-full object-cover grayscale"
               />
@@ -35,9 +35,9 @@ const AboutSection = () => {
           </div>
 
           {/* About Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 font-fira-mono">
             <p className="text-portfolio-black leading-relaxed">
-              "Sorry meaningful design begins with purpose - transforming problems into clear, actionable solutions. Like a good book, it reveals needs you didn't know you had and feeds the hunger to solve far more than you imagined."
+              "Every meaningful design begins with purpose - transforming problems into clear, actionable solutions. Like a good book, it reveals needs you didn't know you had and feeds the hunger to solve far more than you imagined."
             </p>
             
             <p className="text-portfolio-black leading-relaxed">
