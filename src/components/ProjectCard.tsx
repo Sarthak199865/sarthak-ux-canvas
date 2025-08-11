@@ -33,10 +33,10 @@ const ProjectCard = ({ title, subtitle, figmaLink, imageUrl }: ProjectCardProps)
       
       {/* Project Content */}
       <div className="p-6 space-y-3">
-        <h3 className="project-title text-xl font-cormorant font-medium text-portfolio-black">
+        <h3 className="project-title text-xl font-montreal font-medium text-portfolio-black">
           {title}
         </h3>
-        <p className="text-portfolio-gray font-cormorant leading-relaxed text-lg">
+        <p className="text-portfolio-gray font-montreal leading-relaxed text-lg">
           {subtitle}
         </p>
       </div>
