@@ -5,7 +5,7 @@ const ProjectsSection = () => {
     {
       title: "MEET.O",
       subtitle: "Seamless connections, effortless bookings",
-      figmaLink: "/projects/meet-o",
+      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?page-id=13%3A966&node-id=199-5689&viewport=411%2C220%2C0.03&t=NTlOEU3fDr0VDapa-1&scaling=scale-down-width&content-scaling=fixed",
       imageUrl: "/lovable-uploads/84278395-6524-4982-8b2d-df6387690e12.png"
     },
     {
