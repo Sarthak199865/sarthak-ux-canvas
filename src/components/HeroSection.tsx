@@ -92,7 +92,7 @@ const HeroSection = () => {
         <div className="flex justify-center">
           {/* Hero Text */}
           <div>
-            <h1 className="text-2xl font-cormorant leading-tight">
+            <h1 className="text-2xl font-montreal leading-tight" style={{ fontWeight: 350 }}>
               {words.map((word, index) => (
                 <span
                   key={index}
