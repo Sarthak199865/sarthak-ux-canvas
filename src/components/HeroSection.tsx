@@ -8,11 +8,14 @@ const HeroSection = () => {
   const [temperature, setTemperature] = useState("24°C");
   const [startTyping, setStartTyping] = useState(false);
   
-  const words = [
+  const introWords = [
     { text: "Hi", className: "text-portfolio-gray italic" },
     { text: "I", className: "text-portfolio-gray italic" },
     { text: "am", className: "text-portfolio-gray italic" },
-    { text: "Sarthak,", className: "text-portfolio-gray italic" },
+    { text: "Sarthak", className: "text-portfolio-gray italic" }
+  ];
+
+  const descriptionWords = [
     { text: "I", className: "text-portfolio-black" },
     { text: "design", className: "text-portfolio-black" },
     { text: "intuitive,", className: "text-portfolio-black" },
@@ -50,16 +53,16 @@ const HeroSection = () => {
 
 
   useEffect(() => {
-    if (!startTyping) return; // Don't start typing until startTyping is true
+    if (!startTyping) return;
     
     const timer = setTimeout(() => {
-      if (visibleWords < words.length) {
+      if (visibleWords < introWords.length + descriptionWords.length) {
         setVisibleWords(prev => prev + 1);
       }
     }, 150);
 
     return () => clearTimeout(timer);
-  }, [visibleWords, words.length, startTyping]);
+  }, [visibleWords, introWords.length, descriptionWords.length, startTyping]);
 
   return (
     <section className="min-h-screen flex items-center pt-20 relative">
@@ -92,8 +95,9 @@ const HeroSection = () => {
         <div className="flex justify-center">
           {/* Hero Text */}
           <div>
-            <h1 className="font-montreal font-normal leading-tight" style={{ fontSize: '48px' }}>
-              {words.map((word, index) => (
+            {/* Intro Text - Hi I am Sarthak */}
+            <h1 className="font-cormorant text-portfolio-black mb-6" style={{ fontSize: '48px' }}>
+              {introWords.map((word, index) => (
                 <span
                   key={index}
                   className={`${word.className} ${
@@ -109,6 +113,28 @@ const HeroSection = () => {
                 </span>
               ))}
             </h1>
+            
+            {/* Description Text */}
+            <h2 className="font-montreal font-normal leading-tight" style={{ fontSize: '48px' }}>
+              {descriptionWords.map((word, index) => {
+                const globalIndex = index + introWords.length;
+                return (
+                  <span
+                    key={globalIndex}
+                    className={`${word.className} ${
+                      globalIndex < visibleWords 
+                        ? 'opacity-100' 
+                        : 'opacity-0'
+                    } inline-block mr-3 transition-all duration-500 ease-out`}
+                    style={{
+                      transitionDelay: `${globalIndex * 100}ms`
+                    }}
+                  >
+                    {word.text}
+                  </span>
+                );
+              })}
+            </h2>
           </div>
         </div>
       </div>
