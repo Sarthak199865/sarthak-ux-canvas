@@ -91,8 +91,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 w-full">
-        <div className="flex justify-center">
+      <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-center min-h-[60vh]">
+        <div className="text-center">
           {/* Hero Text */}
           <div>
             {/* Intro Text - Hi I am Sarthak */}
@@ -136,11 +136,11 @@ const HeroSection = () => {
               })}
             </h2>
             
-            {/* Scroll down text */}
-            <div className="text-center mt-8">
-              <p className="font-cormorant text-portfolio-gray" style={{ fontSize: '14px' }}>
+            {/* Scroll down pill button */}
+            <div className="text-center mt-12">
+              <button className="font-cormorant text-portfolio-gray bg-transparent border border-portfolio-gray px-6 py-3 rounded-full hover:bg-portfolio-gray hover:text-white transition-all duration-300" style={{ fontSize: '14px', borderRadius: '32px' }}>
                 scroll down to see my works
-              </p>
+              </button>
             </div>
           </div>
         </div>
