@@ -96,7 +96,7 @@ const HeroSection = () => {
           {/* Hero Text */}
           <div>
             {/* Intro Text - Hi I am Sarthak */}
-            <h1 className="font-cormorant text-portfolio-black mb-6" style={{ fontSize: '48px' }}>
+            <h1 className="font-cormorant text-portfolio-black mb-6" style={{ fontSize: '24px' }}>
               {introWords.map((word, index) => (
                 <span
                   key={index}
@@ -135,6 +135,13 @@ const HeroSection = () => {
                 );
               })}
             </h2>
+            
+            {/* Scroll down text */}
+            <div className="text-center mt-8">
+              <p className="font-cormorant text-portfolio-gray" style={{ fontSize: '14px' }}>
+                scroll down to see my works
+              </p>
+            </div>
           </div>
         </div>
       </div>
