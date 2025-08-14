@@ -9,25 +9,25 @@ const HeroSection = () => {
   const [startTyping, setStartTyping] = useState(false);
   
   const words = [
-    { text: "Hi", className: "text-portfolio-gray" },
-    { text: "I", className: "text-portfolio-gray" },
-    { text: "am", className: "text-portfolio-gray" },
-    { text: "Sarthak,", className: "text-portfolio-gray" },
-    { text: "a", className: "text-portfolio-black" },
-    { text: "product", className: "text-portfolio-black" },
-    { text: "designer", className: "text-portfolio-black" },
-    { text: "who", className: "text-portfolio-black" },
-    { text: "loves", className: "text-portfolio-black" },
-    { text: "ideas", className: "text-portfolio-black" },
-    { text: "and", className: "text-portfolio-black" },
-    { text: "their", className: "text-portfolio-black" },
+    { text: "Hi", className: "text-portfolio-gray italic" },
+    { text: "I", className: "text-portfolio-gray italic" },
+    { text: "am", className: "text-portfolio-gray italic" },
+    { text: "Sarthak,", className: "text-portfolio-gray italic" },
+    { text: "I", className: "text-portfolio-black" },
     { text: "design", className: "text-portfolio-black" },
-    { text: "implementations", className: "text-portfolio-black" },
-    { text: "to", className: "text-portfolio-black" },
-    { text: "solve", className: "text-portfolio-black" },
-    { text: "real", className: "text-portfolio-black" },
-    { text: "world", className: "text-portfolio-black" },
-    { text: "problems.", className: "text-portfolio-black" }
+    { text: "intuitive,", className: "text-portfolio-black" },
+    { text: "research-driven", className: "text-portfolio-black" },
+    { text: "digital", className: "text-portfolio-black" },
+    { text: "experiences", className: "text-portfolio-black" },
+    { text: "that", className: "text-portfolio-black" },
+    { text: "simplify", className: "text-portfolio-black" },
+    { text: "complex", className: "text-portfolio-black" },
+    { text: "workflows", className: "text-portfolio-black" },
+    { text: "and", className: "text-portfolio-black" },
+    { text: "help", className: "text-portfolio-black" },
+    { text: "businesses", className: "text-portfolio-black" },
+    { text: "work", className: "text-portfolio-black" },
+    { text: "faster.", className: "text-portfolio-black" }
   ];
 
   // Start typing after 4 seconds
@@ -92,7 +92,7 @@ const HeroSection = () => {
         <div className="flex justify-center">
           {/* Hero Text */}
           <div>
-            <h1 className="font-montreal font-medium leading-tight" style={{ fontSize: '68px' }}>
+            <h1 className="font-montreal font-normal leading-tight" style={{ fontSize: '48px' }}>
               {words.map((word, index) => (
                 <span
                   key={index}
