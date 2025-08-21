@@ -47,7 +47,8 @@ const ProjectsSection = () => {
     {
       title: "Space debris monitoring and removal system",
       subtitle: "Advanced space technology for orbital debris tracking and removal",
-      figmaLink: "https://www.figma.com/deck/TNeD4yYPuGxQ0GUrGWhHEI/Untitled?node-id=1-42&t=l9v0ML0xX4exZahV-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+      figmaLink: "https://www.figma.com/deck/TNeD4yYPuGxQ0GUrGWhHEI/Untitled?node-id=1-42&t=l9v0ML0xX4exZahV-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      imageUrl: "/lovable-uploads/405df3a4-416c-4a5a-a51e-7a68b7f74e12.png"
     }
   ];
 

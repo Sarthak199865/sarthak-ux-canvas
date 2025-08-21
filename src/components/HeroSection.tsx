@@ -138,7 +138,7 @@ const HeroSection = () => {
             
             {/* Scroll down text */}
             <div className="text-center mt-16">
-              <div className="font-cormorant text-portfolio-gray bg-transparent border border-portfolio-gray/30 px-6 py-3 rounded-full" style={{ fontSize: '14px', borderRadius: '32px' }}>
+              <div className="font-cormorant text-portfolio-gray px-6 py-3" style={{ fontSize: '14px' }}>
                 scroll down to see my works
               </div>
             </div>
