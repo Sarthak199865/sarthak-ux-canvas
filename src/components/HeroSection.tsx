@@ -136,11 +136,11 @@ const HeroSection = () => {
               })}
             </h2>
             
-            {/* Scroll down pill button */}
-            <div className="text-center mt-12">
-              <button className="font-cormorant text-portfolio-gray bg-transparent border border-portfolio-gray px-6 py-3 rounded-full hover:bg-portfolio-gray hover:text-white transition-all duration-300" style={{ fontSize: '14px', borderRadius: '32px' }}>
+            {/* Scroll down text */}
+            <div className="text-center mt-16">
+              <div className="font-cormorant text-portfolio-gray bg-transparent border border-portfolio-gray/30 px-6 py-3 rounded-full" style={{ fontSize: '14px', borderRadius: '32px' }}>
                 scroll down to see my works
-              </button>
+              </div>
             </div>
           </div>
         </div>

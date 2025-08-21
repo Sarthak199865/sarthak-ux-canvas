@@ -43,6 +43,11 @@ const ProjectsSection = () => {
       subtitle: "A cloud based digital management system",
       figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/Untitled?page-id=13%3A966&node-id=14-2354&viewport=371%2C259%2C0.02&t=mvGzCWpvNXYqGeX7-1&scaling=scale-down-width&content-scaling=fixed",
       imageUrl: "/lovable-uploads/6f28a0ee-603b-49b7-8677-02d6d27a92b7.png"
+    },
+    {
+      title: "Space debris monitoring and removal system",
+      subtitle: "Advanced space technology for orbital debris tracking and removal",
+      figmaLink: "https://www.figma.com/deck/TNeD4yYPuGxQ0GUrGWhHEI/Untitled?node-id=1-42&t=l9v0ML0xX4exZahV-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
     }
   ];
 
