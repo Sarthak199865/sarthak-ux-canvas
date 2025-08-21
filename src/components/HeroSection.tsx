@@ -33,11 +33,11 @@ const HeroSection = () => {
     { text: "faster.", className: "text-portfolio-black" }
   ];
 
-  // Start typing after 4 seconds
+  // Start typing after 1 second
   useEffect(() => {
     const startTimer = setTimeout(() => {
       setStartTyping(true);
-    }, 4000);
+    }, 1000);
 
     return () => clearTimeout(startTimer);
   }, []);
