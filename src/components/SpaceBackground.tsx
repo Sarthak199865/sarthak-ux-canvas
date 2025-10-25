@@ -3,7 +3,7 @@ const SpaceBackground = () => {
     <div className="absolute inset-0 overflow-hidden bg-black">
       {/* Stars Layer */}
       <div className="stars-container absolute inset-0">
-        {/* Regular stars */}
+        {/* Regular stars - static positions */}
         {[...Array(140)].map((_, i) => (
           <div
             key={`star-${i}`}
@@ -13,7 +13,6 @@ const SpaceBackground = () => {
               top: `${Math.random() * 100}%`,
               width: `${Math.random() * 1 + 1}px`,
               height: `${Math.random() * 1 + 1}px`,
-              opacity: Math.random() * 0.4 + 0.4,
               animationDelay: `${Math.random() * 5}s`,
               animationDuration: `${Math.random() * 2 + 3}s`,
             }}

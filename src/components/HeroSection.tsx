@@ -97,8 +97,7 @@ const HeroSection = () => {
           <div>
             {/* Intro Text - HI I AM SARTHAK */}
             <h1 
-              className="font-cormorant text-white mb-8 font-black italic uppercase tracking-tight" 
-              style={{ fontSize: 'clamp(32px, 6vw, 80px)', letterSpacing: '-0.02em' }}
+              className="font-cormorant text-white mb-8 font-light italic uppercase tracking-tight text-[18px]"
             >
               {introWords.map((word, index) => (
                 <span
@@ -151,7 +150,7 @@ const HeroSection = () => {
                   if (el) el.scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                <span className="text-sm uppercase tracking-wider">Scroll down to see my works</span>
+                <span className="text-sm uppercase tracking-wider">Check out my work</span>
                 <span className="text-lg transition-transform group-hover:translate-x-1">→</span>
               </button>
             </div>
