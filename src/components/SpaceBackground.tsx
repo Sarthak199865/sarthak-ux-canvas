@@ -185,60 +185,13 @@ const SpaceBackground = () => {
         </g>
       </svg>
 
-      {/* Large Featured Mars (Right Edge) */}
-      <div className="large-mars">
-        <svg
-          width="800"
-          height="800"
-          viewBox="0 0 800 800"
-          className="absolute -right-64 top-1/2 -translate-y-1/2"
-          style={{ opacity: 0.95 }}
-        >
-          <defs>
-            <radialGradient id="largeMarsGradient" cx="40%" cy="30%">
-              <stop offset="0%" stopColor="#B5967F" />
-              <stop offset="40%" stopColor="#C1440E" />
-              <stop offset="100%" stopColor="#6B3A2D" />
-            </radialGradient>
-            <radialGradient id="crater1">
-              <stop offset="0%" stopColor="#4A2818" />
-              <stop offset="100%" stopColor="#6B3A2D" />
-            </radialGradient>
-            <filter id="marsGlow">
-              <feGaussianBlur stdDeviation="3" />
-            </filter>
-          </defs>
-          
-          {/* Main Mars sphere */}
-          <circle cx="400" cy="400" r="380" fill="url(#largeMarsGradient)" />
-          
-          {/* Craters */}
-          <circle cx="320" cy="280" r="40" fill="url(#crater1)" opacity="0.6" />
-          <circle cx="450" cy="380" r="60" fill="url(#crater1)" opacity="0.5" />
-          <circle cx="280" cy="480" r="30" fill="url(#crater1)" opacity="0.7" />
-          <circle cx="380" cy="520" r="25" fill="url(#crater1)" opacity="0.6" />
-          <circle cx="500" cy="260" r="35" fill="url(#crater1)" opacity="0.55" />
-          
-          {/* Atmospheric rim */}
-          <circle 
-            cx="400" 
-            cy="400" 
-            r="380" 
-            fill="none" 
-            stroke="#E27B58" 
-            strokeWidth="3" 
-            opacity="0.6"
-            filter="url(#marsGlow)"
-          />
-        </svg>
-      </div>
 
       <style>{`
         .star {
           position: absolute;
           background: #FFFFFF;
           border-radius: 50%;
-          animation: starPulse 4s ease-in-out infinite;
+          animation: starBlink 5s ease-in-out infinite;
         }
         
         .bright-star {
@@ -246,7 +199,7 @@ const SpaceBackground = () => {
           background: #FFFFFF;
           border-radius: 50%;
           opacity: 0.95;
-          animation: brightPulse 2.5s ease-in-out infinite;
+          animation: brightStarBlink 3s ease-in-out infinite;
           box-shadow: 0 0 4px #FFFFFF;
         }
         
@@ -282,14 +235,19 @@ const SpaceBackground = () => {
           box-shadow: 0 0 6px #FFFFFF;
         }
         
-        @keyframes starPulse {
-          0%, 100% { opacity: 0.4; }
-          50% { opacity: 0.8; }
+        @keyframes starBlink {
+          0%, 100% { opacity: 0.3; }
+          20% { opacity: 0.8; }
+          40% { opacity: 0.5; }
+          60% { opacity: 0.9; }
+          80% { opacity: 0.4; }
         }
         
-        @keyframes brightPulse {
-          0%, 100% { opacity: 0.9; }
-          50% { opacity: 1; }
+        @keyframes brightStarBlink {
+          0%, 100% { opacity: 0.8; }
+          25% { opacity: 1; }
+          50% { opacity: 0.6; }
+          75% { opacity: 0.95; }
         }
         
         @keyframes rotate {
