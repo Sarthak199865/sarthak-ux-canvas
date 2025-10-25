@@ -14,7 +14,7 @@ const Navbar = () => {
             <img
               src="/lovable-uploads/0bce71b1-cd3a-4291-961c-2fc72cf0227c.png"
               alt="Sarthak UX Designer portfolio logo"
-              className="h-8 w-auto"
+              className="h-8 w-auto brightness-0 invert"
               loading="eager"
               decoding="async"
             />
