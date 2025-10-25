@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import AnimatedMesh from "@/components/AnimatedMesh";
+import SpaceBackground from "@/components/SpaceBackground";
 
 const HeroSection = () => {
   const [visibleWords, setVisibleWords] = useState(0);
@@ -9,28 +8,28 @@ const HeroSection = () => {
   const [startTyping, setStartTyping] = useState(false);
   
   const introWords = [
-    { text: "Hi", className: "text-portfolio-gray italic" },
-    { text: "I", className: "text-portfolio-gray italic" },
-    { text: "am", className: "text-portfolio-gray italic" },
-    { text: "Sarthak", className: "text-portfolio-gray italic" }
+    { text: "HI", className: "text-white italic" },
+    { text: "I", className: "text-white italic" },
+    { text: "AM", className: "text-white italic" },
+    { text: "SARTHAK", className: "text-white italic" }
   ];
 
   const descriptionWords = [
-    { text: "I", className: "text-portfolio-black" },
-    { text: "design", className: "text-portfolio-black" },
-    { text: "intuitive,", className: "text-portfolio-black" },
-    { text: "research-driven", className: "text-portfolio-black" },
-    { text: "digital", className: "text-portfolio-black" },
-    { text: "experiences", className: "text-portfolio-black" },
-    { text: "that", className: "text-portfolio-black" },
-    { text: "simplify", className: "text-portfolio-black" },
-    { text: "complex", className: "text-portfolio-black" },
-    { text: "workflows", className: "text-portfolio-black" },
-    { text: "and", className: "text-portfolio-black" },
-    { text: "help", className: "text-portfolio-black" },
-    { text: "businesses", className: "text-portfolio-black" },
-    { text: "work", className: "text-portfolio-black" },
-    { text: "faster.", className: "text-portfolio-black" }
+    { text: "I", className: "text-white" },
+    { text: "design", className: "text-white" },
+    { text: "intuitive,", className: "text-white" },
+    { text: "research-driven", className: "text-white" },
+    { text: "digital", className: "text-white" },
+    { text: "experiences", className: "text-white" },
+    { text: "that", className: "text-white" },
+    { text: "simplify", className: "text-white" },
+    { text: "complex", className: "text-white" },
+    { text: "workflows", className: "text-white" },
+    { text: "and", className: "text-white" },
+    { text: "help", className: "text-white" },
+    { text: "businesses", className: "text-white" },
+    { text: "work", className: "text-white" },
+    { text: "faster.", className: "text-white" }
   ];
 
   // Start typing after 1 second
@@ -65,19 +64,20 @@ const HeroSection = () => {
   }, [visibleWords, introWords.length, descriptionWords.length, startTyping]);
 
   return (
-    <section className="min-h-screen flex items-center pt-20 relative">
-      {/* Animated Mesh Background */}
-      <AnimatedMesh />
+    <section className="relative flex items-center bg-black" style={{ height: '100vh', width: '100%' }}>
+      {/* Space Background */}
+      <SpaceBackground />
+      
       {/* Top Info Bar */}
       <div className="absolute top-24 left-0 right-0 max-w-7xl mx-auto px-6 z-10">
         <div className="flex justify-between items-center">
           {/* Location & Temperature */}
-          <div className="text-xs font-mono text-portfolio-gray">
+          <div className="text-xs font-fira-mono text-white/60">
             Bengaluru, {temperature}
           </div>
           
           {/* Date & Time */}
-          <div className="text-xs font-mono text-portfolio-gray">
+          <div className="text-xs font-fira-mono text-white/60">
             {currentTime.toLocaleDateString('en-GB', { 
               day: '2-digit', 
               month: '2-digit', 
@@ -91,12 +91,15 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-center min-h-[60vh]">
-        <div className="text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex items-center justify-center">
+        <div className="text-center max-w-5xl">
           {/* Hero Text */}
           <div>
-            {/* Intro Text - Hi I am Sarthak */}
-            <h1 className="font-cormorant text-portfolio-black mb-6" style={{ fontSize: '24px' }}>
+            {/* Intro Text - HI I AM SARTHAK */}
+            <h1 
+              className="font-cormorant text-white mb-8 font-black italic uppercase tracking-tight" 
+              style={{ fontSize: 'clamp(32px, 6vw, 80px)', letterSpacing: '-0.02em' }}
+            >
               {introWords.map((word, index) => (
                 <span
                   key={index}
@@ -104,7 +107,7 @@ const HeroSection = () => {
                     index < visibleWords 
                       ? 'opacity-100' 
                       : 'opacity-0'
-                  } inline-block mr-3 transition-all duration-500 ease-out`}
+                  } inline-block mr-4 transition-all duration-500 ease-out`}
                   style={{
                     transitionDelay: `${index * 100}ms`
                   }}
@@ -115,7 +118,10 @@ const HeroSection = () => {
             </h1>
             
             {/* Description Text */}
-            <h2 className="font-montreal font-normal leading-tight" style={{ fontSize: '48px' }}>
+            <h2 
+              className="font-montreal font-normal text-white leading-relaxed" 
+              style={{ fontSize: 'clamp(20px, 3vw, 36px)', lineHeight: '1.6' }}
+            >
               {descriptionWords.map((word, index) => {
                 const globalIndex = index + introWords.length;
                 return (
@@ -125,7 +131,7 @@ const HeroSection = () => {
                       globalIndex < visibleWords 
                         ? 'opacity-100' 
                         : 'opacity-0'
-                    } inline-block mr-3 transition-all duration-500 ease-out`}
+                    } inline-block mr-2 transition-all duration-500 ease-out`}
                     style={{
                       transitionDelay: `${globalIndex * 100}ms`
                     }}
@@ -136,11 +142,18 @@ const HeroSection = () => {
               })}
             </h2>
             
-            {/* Scroll down text */}
-            <div className="text-center mt-16">
-              <div className="font-cormorant text-portfolio-gray px-6 py-3" style={{ fontSize: '14px' }}>
-                scroll down to see my works
-              </div>
+            {/* Scroll down text with arrow */}
+            <div className="text-center mt-20">
+              <button 
+                className="font-fira-mono text-white border border-white bg-transparent px-8 py-4 inline-flex items-center gap-3 transition-all duration-300 hover:bg-white hover:text-black group"
+                onClick={() => {
+                  const el = document.getElementById("work");
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                <span className="text-sm uppercase tracking-wider">Scroll down to see my works</span>
+                <span className="text-lg transition-transform group-hover:translate-x-1">→</span>
+              </button>
             </div>
           </div>
         </div>
