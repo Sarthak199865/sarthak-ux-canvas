@@ -1,3 +1,5 @@
+import SolarSystem3D from './SolarSystem3D';
+
 const SpaceBackground = () => {
   return (
     <div className="absolute inset-0 overflow-hidden bg-black">
@@ -52,137 +54,8 @@ const SpaceBackground = () => {
         ))}
       </div>
 
-      {/* Solar System SVG */}
-      <svg
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-        width="1200"
-        height="1200"
-        viewBox="0 0 1200 1200"
-        style={{ opacity: 0.9 }}
-      >
-        <defs>
-          {/* Sun Glow */}
-          <radialGradient id="sunGlow">
-            <stop offset="0%" stopColor="#E27B58" stopOpacity="0.8" />
-            <stop offset="50%" stopColor="#E27B58" stopOpacity="0.3" />
-            <stop offset="100%" stopColor="#E27B58" stopOpacity="0" />
-          </radialGradient>
-          
-          {/* Mars Gradient */}
-          <radialGradient id="marsGradient">
-            <stop offset="0%" stopColor="#C1440E" />
-            <stop offset="100%" stopColor="#8B3A1F" />
-          </radialGradient>
-          
-          {/* Earth Gradient */}
-          <radialGradient id="earthGradient">
-            <stop offset="0%" stopColor="#5A9FD4" />
-            <stop offset="100%" stopColor="#2C5F7C" />
-          </radialGradient>
-          
-          {/* Filters */}
-          <filter id="sunGlowFilter">
-            <feGaussianBlur stdDeviation="8" />
-          </filter>
-          <filter id="planetGlow">
-            <feGaussianBlur stdDeviation="2" />
-          </filter>
-        </defs>
-
-        {/* Sun with glow */}
-        <circle cx="600" cy="600" r="60" fill="url(#sunGlow)" filter="url(#sunGlowFilter)" className="sun-outer-glow" />
-        <circle cx="600" cy="600" r="38" fill="#E27B58" className="sun-core">
-          <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite" />
-        </circle>
-
-        {/* Orbital Paths */}
-        <circle cx="600" cy="600" r="120" fill="none" stroke="#FFFFFF" strokeWidth="0.3" opacity="0.12" />
-        <circle cx="600" cy="600" r="200" fill="none" stroke="#FFFFFF" strokeWidth="0.3" opacity="0.12" />
-        <circle cx="600" cy="600" r="300" fill="none" stroke="#FFFFFF" strokeWidth="0.3" opacity="0.12" />
-        <circle cx="600" cy="600" r="420" fill="none" stroke="#FFFFFF" strokeWidth="0.3" opacity="0.12" />
-        <circle cx="600" cy="600" r="560" fill="none" stroke="#FFFFFF" strokeWidth="0.3" opacity="0.12" />
-
-        {/* Mercury */}
-        <g>
-          <circle cx="720" cy="600" r="6" fill="#6B6B6B">
-            <animateTransform
-              attributeName="transform"
-              type="rotate"
-              from="0 600 600"
-              to="360 600 600"
-              dur="8s"
-              repeatCount="indefinite"
-            />
-          </circle>
-        </g>
-
-        {/* Venus */}
-        <g>
-          <circle cx="800" cy="600" r="9" fill="#D4C5B9">
-            <animateTransform
-              attributeName="transform"
-              type="rotate"
-              from="45 600 600"
-              to="405 600 600"
-              dur="12s"
-              repeatCount="indefinite"
-            />
-          </circle>
-        </g>
-
-        {/* Earth with Moon */}
-        <g>
-          <g>
-            <circle cx="900" cy="600" r="11" fill="url(#earthGradient)" />
-            <circle cx="925" cy="600" r="3" fill="#C0C0C0">
-              <animateTransform
-                attributeName="transform"
-                type="rotate"
-                from="0 900 600"
-                to="360 900 600"
-                dur="3s"
-                repeatCount="indefinite"
-              />
-            </circle>
-            <animateTransform
-              attributeName="transform"
-              type="rotate"
-              from="0 600 600"
-              to="360 600 600"
-              dur="16s"
-              repeatCount="indefinite"
-            />
-          </g>
-        </g>
-
-        {/* Mars (orbital) */}
-        <g>
-          <circle cx="1020" cy="600" r="14" fill="url(#marsGradient)" filter="url(#planetGlow)">
-            <animateTransform
-              attributeName="transform"
-              type="rotate"
-              from="0 600 600"
-              to="360 600 600"
-              dur="22s"
-              repeatCount="indefinite"
-            />
-          </circle>
-        </g>
-
-        {/* Gas Giant */}
-        <g>
-          <circle cx="1160" cy="600" r="20" fill="#9B8778">
-            <animateTransform
-              attributeName="transform"
-              type="rotate"
-              from="0 600 600"
-              to="360 600 600"
-              dur="30s"
-              repeatCount="indefinite"
-            />
-          </circle>
-        </g>
-      </svg>
+      {/* 3D Solar System */}
+      <SolarSystem3D />
 
 
       <style>{`
