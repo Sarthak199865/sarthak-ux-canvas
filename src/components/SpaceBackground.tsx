@@ -206,7 +206,6 @@ const SpaceBackground = () => {
           position: absolute;
           width: 10px;
           height: 10px;
-          animation: rotate 25s linear infinite;
         }
         
         .flare-horizontal,
@@ -247,11 +246,6 @@ const SpaceBackground = () => {
           25% { opacity: 1; }
           50% { opacity: 0.6; }
           75% { opacity: 0.95; }
-        }
-        
-        @keyframes rotate {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
         }
         
         @media (prefers-reduced-motion: reduce) {
