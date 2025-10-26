@@ -8,10 +8,10 @@ const HeroSection = () => {
   const [startTyping, setStartTyping] = useState(false);
   
   const introWords = [
-    { text: "HI", className: "text-white italic" },
+    { text: "Hi.", className: "text-white italic" },
     { text: "I", className: "text-white italic" },
-    { text: "AM", className: "text-white italic" },
-    { text: "SARTHAK", className: "text-white italic" }
+    { text: "am", className: "text-white italic" },
+    { text: "Sarthak", className: "text-white italic" }
   ];
 
   const descriptionWords = [
@@ -97,7 +97,7 @@ const HeroSection = () => {
           <div>
             {/* Intro Text - HI I AM SARTHAK */}
             <h1 
-              className="font-cormorant text-white mb-8 font-light italic uppercase tracking-tight text-[18px]"
+              className="font-cormorant text-white mb-8 font-light italic tracking-tight text-[18px]"
             >
               {introWords.map((word, index) => (
                 <span
