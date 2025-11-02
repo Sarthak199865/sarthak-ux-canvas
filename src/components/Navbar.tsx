@@ -16,18 +16,12 @@ const Navbar = () => {
   const navItems = ['work', 'resume', 'about'];
 
   return (
-    <nav className="fixed top-[10px] left-0 right-0 z-50 px-6">
+    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out">
       <div 
-        className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center transition-all duration-500"
+        className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center"
         style={{
-          borderRadius: '18px',
-          backdropFilter: isScrolled ? 'blur(20px) saturate(180%)' : 'blur(12px) saturate(150%)',
-          backgroundColor: isScrolled 
-            ? 'rgba(255, 255, 255, 0.85)' 
-            : 'rgba(255, 255, 255, 0.1)',
-          boxShadow: isScrolled
-            ? '0 2px 16px rgba(0, 0, 0, 0.08), 0 8px 32px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.4)'
-            : '0 2px 8px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
+          backdropFilter: isScrolled ? 'blur(20px) saturate(180%)' : 'none',
+          backgroundColor: 'transparent',
         }}
       >
         {/* Logo - Left */}
