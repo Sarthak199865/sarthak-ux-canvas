@@ -16,7 +16,7 @@ const Navbar = () => {
   const navItems = ['work', 'resume', 'about'];
 
   return (
-    <nav className="fixed top-[42px] left-0 right-0 z-50 px-6">
+    <nav className="fixed top-[18px] left-0 right-0 z-50 px-6">
       <div 
         className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center transition-all duration-500"
         style={{
