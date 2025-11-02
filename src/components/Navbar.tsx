@@ -16,23 +16,12 @@ const Navbar = () => {
   const navItems = ['work', 'resume', 'about'];
 
   return (
-    <nav 
-      className="fixed top-4 left-0 right-0 z-50 transition-all duration-500 ease-out"
-      style={{
-        backdropFilter: isScrolled ? 'blur(24px) saturate(180%)' : 'blur(16px) saturate(150%)',
-        backgroundColor: isScrolled 
-          ? 'rgba(255, 255, 255, 0.08)' 
-          : 'rgba(255, 255, 255, 0.05)',
-      }}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out">
       <div 
-        className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center"
+        className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center"
         style={{
-          borderRadius: '16px',
-          border: '1px solid rgba(255, 255, 255, 0.18)',
-          boxShadow: isScrolled 
-            ? '0 8px 32px rgba(31, 38, 135, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.2)' 
-            : '0 4px 16px rgba(31, 38, 135, 0.08), inset 0 1px 0 0 rgba(255, 255, 255, 0.15)',
+          backdropFilter: isScrolled ? 'blur(20px) saturate(180%)' : 'none',
+          backgroundColor: 'transparent',
         }}
       >
         {/* Logo - Left */}
@@ -41,7 +30,9 @@ const Navbar = () => {
             <img
               src="/lovable-uploads/0bce71b1-cd3a-4291-961c-2fc72cf0227c.png"
               alt="Sarthak UX Designer portfolio logo"
-              className="h-8 w-auto brightness-0 invert transition-all duration-500"
+              className={`h-8 w-auto transition-all duration-500 ${
+                isScrolled ? 'brightness-100 invert-0' : 'brightness-0 invert'
+              }`}
               loading="eager"
               decoding="async"
             />
@@ -56,7 +47,11 @@ const Navbar = () => {
                 <Link
                   key={item}
                   to="/resume"
-                  className="relative font-cormorant text-[15px] text-white/95 hover:text-white transition-all duration-300 capitalize"
+                  className={`relative font-cormorant text-[15px] transition-all duration-500 capitalize ${
+                    isScrolled 
+                      ? 'text-gray-900 hover:text-gray-600' 
+                      : 'text-white/95 hover:text-white'
+                  }`}
                 >
                   {item}
                 </Link>
@@ -66,7 +61,11 @@ const Navbar = () => {
                 <Link
                   key={item}
                   to="/about"
-                  className="relative font-cormorant text-[15px] text-white/95 hover:text-white transition-all duration-300 capitalize"
+                  className={`relative font-cormorant text-[15px] transition-all duration-500 capitalize ${
+                    isScrolled 
+                      ? 'text-gray-900 hover:text-gray-600' 
+                      : 'text-white/95 hover:text-white'
+                  }`}
                 >
                   {item}
                 </Link>
@@ -76,7 +75,11 @@ const Navbar = () => {
                 <Link
                   key={item}
                   to="/#work"
-                  className="relative font-cormorant text-[15px] text-white/95 hover:text-white transition-all duration-300 capitalize"
+                  className={`relative font-cormorant text-[15px] transition-all duration-500 capitalize ${
+                    isScrolled 
+                      ? 'text-gray-900 hover:text-gray-600' 
+                      : 'text-white/95 hover:text-white'
+                  }`}
                 >
                   {item}
                 </Link>
@@ -86,7 +89,11 @@ const Navbar = () => {
                 <a
                   key={item}
                   href={`#${item}`}
-                  className="relative font-cormorant text-[15px] text-white/95 hover:text-white transition-all duration-300 capitalize"
+                  className={`relative font-cormorant text-[15px] transition-all duration-500 capitalize ${
+                    isScrolled 
+                      ? 'text-gray-900 hover:text-gray-600' 
+                      : 'text-white/95 hover:text-white'
+                  }`}
                 >
                   {item}
                 </a>
