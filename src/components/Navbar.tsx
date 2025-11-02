@@ -17,38 +17,38 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-out ${
-        isScrolled 
-          ? 'w-[95%] max-w-5xl' 
-          : 'w-[90%] max-w-6xl'
-      }`}
+      className="fixed top-4 left-0 right-0 z-50 transition-all duration-500 ease-out"
       style={{
-        backdropFilter: isScrolled ? 'blur(20px) saturate(180%)' : 'blur(10px) saturate(120%)',
+        backdropFilter: isScrolled ? 'blur(24px) saturate(180%)' : 'blur(16px) saturate(150%)',
         backgroundColor: isScrolled 
-          ? 'rgba(255, 255, 255, 0.85)' 
-          : 'rgba(255, 255, 255, 0.1)',
-        borderRadius: '16px',
-        border: `1px solid ${isScrolled ? 'rgba(255, 255, 255, 0.5)' : 'rgba(255, 255, 255, 0.2)'}`,
-        boxShadow: isScrolled 
-          ? '0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08)' 
-          : '0 4px 16px rgba(0, 0, 0, 0.06)',
+          ? 'rgba(255, 255, 255, 0.08)' 
+          : 'rgba(255, 255, 255, 0.05)',
       }}
     >
-      <div className="px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
+      <div 
+        className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center"
+        style={{
+          borderRadius: '16px',
+          border: '1px solid rgba(255, 255, 255, 0.18)',
+          boxShadow: isScrolled 
+            ? '0 8px 32px rgba(31, 38, 135, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.2)' 
+            : '0 4px 16px rgba(31, 38, 135, 0.08), inset 0 1px 0 0 rgba(255, 255, 255, 0.15)',
+        }}
+      >
+        {/* Logo - Left */}
         <div className="flex items-center">
           <Link to="/" className="inline-flex items-center" aria-label="Go to home">
             <img
               src="/lovable-uploads/0bce71b1-cd3a-4291-961c-2fc72cf0227c.png"
               alt="Sarthak UX Designer portfolio logo"
-              className={`h-8 w-auto transition-all duration-500 ${isScrolled ? 'brightness-100 invert-0' : 'brightness-0 invert'}`}
+              className="h-8 w-auto brightness-0 invert transition-all duration-500"
               loading="eager"
               decoding="async"
             />
           </Link>
         </div>
 
-        {/* Navigation Items */}
+        {/* Navigation Items - Right */}
         <div className="flex items-center space-x-8">
           {navItems.map((item) => {
             if (item === 'resume') {
@@ -56,11 +56,7 @@ const Navbar = () => {
                 <Link
                   key={item}
                   to="/resume"
-                  className={`relative font-cormorant text-[15px] transition-all duration-300 capitalize ${
-                    isScrolled 
-                      ? 'text-gray-800 hover:text-gray-600' 
-                      : 'text-white/95 hover:text-white/70'
-                  }`}
+                  className="relative font-cormorant text-[15px] text-white/95 hover:text-white transition-all duration-300 capitalize"
                 >
                   {item}
                 </Link>
@@ -70,11 +66,7 @@ const Navbar = () => {
                 <Link
                   key={item}
                   to="/about"
-                  className={`relative font-cormorant text-[15px] transition-all duration-300 capitalize ${
-                    isScrolled 
-                      ? 'text-gray-800 hover:text-gray-600' 
-                      : 'text-white/95 hover:text-white/70'
-                  }`}
+                  className="relative font-cormorant text-[15px] text-white/95 hover:text-white transition-all duration-300 capitalize"
                 >
                   {item}
                 </Link>
@@ -84,11 +76,7 @@ const Navbar = () => {
                 <Link
                   key={item}
                   to="/#work"
-                  className={`relative font-cormorant text-[15px] transition-all duration-300 capitalize ${
-                    isScrolled 
-                      ? 'text-gray-800 hover:text-gray-600' 
-                      : 'text-white/95 hover:text-white/70'
-                  }`}
+                  className="relative font-cormorant text-[15px] text-white/95 hover:text-white transition-all duration-300 capitalize"
                 >
                   {item}
                 </Link>
@@ -98,11 +86,7 @@ const Navbar = () => {
                 <a
                   key={item}
                   href={`#${item}`}
-                  className={`relative font-cormorant text-[15px] transition-all duration-300 capitalize ${
-                    isScrolled 
-                      ? 'text-gray-800 hover:text-gray-600' 
-                      : 'text-white/95 hover:text-white/70'
-                  }`}
+                  className="relative font-cormorant text-[15px] text-white/95 hover:text-white transition-all duration-300 capitalize"
                 >
                   {item}
                 </a>
