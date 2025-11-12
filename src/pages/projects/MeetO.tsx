@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
+import ProtectedProject from "@/components/ProtectedProject";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const MeetO = () => {
@@ -46,9 +47,10 @@ const MeetO = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <main className="pt-24 pb-16">
+    <ProtectedProject>
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        <main className="pt-24 pb-16">
         <header className="px-6">
           <div className="max-w-5xl mx-auto">
             <p className="font-montreal text-sm text-muted-foreground tracking-wide uppercase">Case Study</p>
@@ -117,6 +119,7 @@ const MeetO = () => {
         </section>
       </main>
     </div>
+    </ProtectedProject>
   );
 };
 
