@@ -67,6 +67,27 @@ const SpaceBackground = () => {
             <div className="flare-vertical" />
           </div>
         ))}
+        
+        {/* Shooting stars / Meteors */}
+        {[...Array(5)].map((_, i) => {
+          const startY = Math.random() * 50;
+          const angle = Math.random() * 30 - 15; // Vary angle slightly
+          const duration = Math.random() * 1 + 1.5;
+          const delay = Math.random() * 20 + i * 8; // Spread out appearances
+          
+          return (
+            <div
+              key={`meteor-${i}`}
+              className="meteor"
+              style={{
+                top: `${startY}%`,
+                animationDelay: `${delay}s`,
+                animationDuration: `${duration}s`,
+                transform: `rotate(${angle}deg)`,
+              }}
+            />
+          );
+        })}
       </div>
 
       {/* 3D Solar System */}
@@ -141,10 +162,61 @@ const SpaceBackground = () => {
           66% { opacity: 0.75; }
         }
         
+        .meteor {
+          position: absolute;
+          left: -100px;
+          width: 2px;
+          height: 2px;
+          background: #FFFFFF;
+          border-radius: 50%;
+          box-shadow: 
+            0 0 10px 2px rgba(255, 255, 255, 0.8),
+            0 0 20px 4px rgba(180, 200, 255, 0.5);
+          animation: meteorShoot 30s ease-in infinite;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+        
+        .meteor::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 2px;
+          width: 100px;
+          height: 2px;
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 1) 100%
+          );
+          border-radius: 50%;
+          transform-origin: right center;
+        }
+        
+        @keyframes meteorShoot {
+          0% {
+            transform: translateX(0) translateY(0);
+            opacity: 0;
+          }
+          5% {
+            opacity: 1;
+          }
+          10% {
+            transform: translateX(min(120vw, 2000px)) translateY(min(60vh, 1000px));
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(min(120vw, 2000px)) translateY(min(60vh, 1000px));
+            opacity: 0;
+          }
+        }
+        
         @media (prefers-reduced-motion: reduce) {
           .star,
           .bright-star,
           .flare-star,
+          .meteor,
           .sun-core,
           circle {
             animation: none !important;
