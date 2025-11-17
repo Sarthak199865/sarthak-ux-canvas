@@ -35,8 +35,8 @@ const AboutSection = () => {
           </div>
 
           {/* About Content */}
-          <div className="space-y-6 font-fira-mono">
-            <p className="text-portfolio-black leading-relaxed font-instrument-serif italic text-2xl" style={{ fontWeight: 50 }}>
+          <div className="space-y-6">
+            <p className="text-portfolio-black leading-relaxed font-crimson-text text-2xl font-normal">
               "Every meaningful design begins with purpose - transforming problems into clear, actionable solutions. Like a{" "}
               <a 
                 href="https://www.figma.com/proto/pGVNiMpXtU7uNkG3RhNinu/Untitled?page-id=30%3A2&node-id=44-13&viewport=-6246%2C1064%2C0.25&t=exykmpygX2CLuS5J-1&scaling=min-zoom&content-scaling=fixed"
@@ -49,7 +49,7 @@ const AboutSection = () => {
               , it reveals needs you didn't know you had and feeds the hunger to solve far more than you imagined."
             </p>
             
-            <p className="text-portfolio-black leading-relaxed">
+            <p className="text-portfolio-black leading-relaxed font-cutive-mono text-base">
               Apart from designing interfaces, I enjoy reading philosophy, science, and biographies; soul-searching through writing; exploring music—from Indian classical to Western country—that transforms my thinking; running and weight training; sketching; and tending a small terrace garden.
             </p>
 

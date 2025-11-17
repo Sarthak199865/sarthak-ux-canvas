@@ -23,6 +23,8 @@ export default {
 			'cormorant': ['Cormorant', 'serif'],
 			'fira-mono': ['Fira Mono', 'monospace'],
 			'instrument-serif': ['Instrument Serif', 'serif'],
+			'crimson-text': ['Crimson Text', 'serif'],
+			'cutive-mono': ['Cutive Mono', 'monospace'],
 		},
 			colors: {
 				'portfolio-black': 'hsl(var(--portfolio-black))',
