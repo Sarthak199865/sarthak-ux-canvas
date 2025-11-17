@@ -18,11 +18,12 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				'montreal': ['Neue Montreal', 'system-ui', 'sans-serif'],
-				'cormorant': ['Cormorant', 'serif'],
-				'fira-mono': ['Fira Mono', 'monospace'],
-			},
+		fontFamily: {
+			'montreal': ['Neue Montreal', 'system-ui', 'sans-serif'],
+			'cormorant': ['Cormorant', 'serif'],
+			'fira-mono': ['Fira Mono', 'monospace'],
+			'instrument-serif': ['Instrument Serif', 'serif'],
+		},
 			colors: {
 				'portfolio-black': 'hsl(var(--portfolio-black))',
 				'portfolio-gray': 'hsl(var(--portfolio-gray))',
