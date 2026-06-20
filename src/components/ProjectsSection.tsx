@@ -55,6 +55,12 @@ const ProjectsSection = () => {
       subtitle: "Advanced space technology for orbital debris tracking and removal",
       figmaLink: "https://www.figma.com/deck/TNeD4yYPuGxQ0GUrGWhHEI/Untitled?node-id=1-42&t=l9v0ML0xX4exZahV-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
       imageUrl: "/lovable-uploads/d7c60fbe-1a16-426f-96cc-229528fac55f.png"
+    },
+    {
+      title: "Moxo",
+      subtitle: "an AI workflow orchestration platform for businesses",
+      figmaLink: "https://www.figma.com/deck/QZsm2paqW5hNBjXscIxrGu/A-UX-Case-Study-on-NewFlow-at-Moxo?node-id=1-61&viewport=-101%2C-109%2C0.52&t=tUGWe8Y3hOALpC7n-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      imageUrl: "/__l5e/assets-v1/b7e93ffd-7581-472e-8dad-2fd0dcf79e17/Moxo_AI.png"
     }
   ];
 
