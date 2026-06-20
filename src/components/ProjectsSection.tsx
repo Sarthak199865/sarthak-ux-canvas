@@ -11,7 +11,7 @@ const ProjectsSection = () => {
     {
       title: "Moxo",
       subtitle: "an AI workflow orchestration platform for businesses",
-      figmaLink: "https://www.figma.com/deck/QZsm2paqW5hNBjXscIxrGu/A-UX-Case-Study-on-NewFlow-at-Moxo?node-id=1-61&viewport=-101%2C-109%2C0.52&t=tUGWe8Y3hOALpC7n-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      figmaLink: "https://www.figma.com/deck/QZsm2paqW5hNBjXscIxrGu/A-UX-Case-Study-on-NewFlow-at-Moxo?node-id=1-23&viewport=-101%2C-109%2C0.52&t=tUGWe8Y3hOALpC7n-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
       imageUrl: "/__l5e/assets-v1/b7e93ffd-7581-472e-8dad-2fd0dcf79e17/Moxo_AI.png"
     },
     {
