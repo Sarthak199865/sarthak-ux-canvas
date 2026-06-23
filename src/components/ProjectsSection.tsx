@@ -23,7 +23,7 @@ const ProjectsSection = () => {
     {
       title: "Medicare",
       subtitle: "Empowering fitness through incentivizing fitness",
-      figmaLink: "https://www.figma.com/design/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=13-6448&t=hgoeTuowCeempDr0-1",
+      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=13-6448&t=VHGAayvFbeYiKfFZ-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
       imageUrl: "/lovable-uploads/b86cbf4f-e012-4094-b092-9aff693a2bc7.png"
     },
     {
