@@ -44,6 +44,9 @@ const Footer = () => {
             );
           })}
         </div>
+        <p className="mt-8 text-center text-[12px] font-normal text-muted-foreground/70 max-w-3xl mx-auto leading-relaxed">
+          Some projects in this portfolio are password protected due to Non-Disclosure Agreements (NDAs) and client confidentiality requirements. If you would like to review these case studies, please contact me via email or phone to request access.
+        </p>
       </div>
     </footer>
   );
