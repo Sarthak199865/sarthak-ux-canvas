@@ -18,14 +18,14 @@ const ProjectsSection = () => {
     {
       title: "MEET.O",
       subtitle: "Seamless connections, effortless bookings",
-      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=199-5689&viewport=613%2C130%2C0.02&t=sxUv7Q0veHMYsQgT-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
+      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=199-5689&viewport=177%2C130%2C0.02&t=8pbfEsRb1QqNVNal-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
       imageUrl: "/lovable-uploads/84278395-6524-4982-8b2d-df6387690e12.png",
       isPasswordProtected: false
     },
     {
       title: "Medicare",
       subtitle: "Empowering fitness through incentivizing fitness",
-      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=13-6448&t=VHGAayvFbeYiKfFZ-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
+      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=13-6448&viewport=177%2C130%2C0.02&t=0aYTbfXA941z59KM-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
       imageUrl: "/lovable-uploads/b86cbf4f-e012-4094-b092-9aff693a2bc7.png",
       isPasswordProtected: false
     },
