@@ -12,55 +12,64 @@ const ProjectsSection = () => {
       title: "Moxo",
       subtitle: "an AI workflow orchestration platform for businesses",
       figmaLink: "https://www.figma.com/deck/QZsm2paqW5hNBjXscIxrGu/A-UX-Case-Study-on-NewFlow-at-Moxo?node-id=1-23&viewport=-101%2C-109%2C0.52&t=tUGWe8Y3hOALpC7n-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
-      imageUrl: "/__l5e/assets-v1/b7e93ffd-7581-472e-8dad-2fd0dcf79e17/Moxo_AI.png"
+      imageUrl: "/__l5e/assets-v1/b7e93ffd-7581-472e-8dad-2fd0dcf79e17/Moxo_AI.png",
+      isPasswordProtected: true
     },
     {
       title: "MEET.O",
       subtitle: "Seamless connections, effortless bookings",
       figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=199-5689&viewport=613%2C130%2C0.02&t=sxUv7Q0veHMYsQgT-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
-      imageUrl: "/lovable-uploads/84278395-6524-4982-8b2d-df6387690e12.png"
+      imageUrl: "/lovable-uploads/84278395-6524-4982-8b2d-df6387690e12.png",
+      isPasswordProtected: false
     },
     {
       title: "Medicare",
       subtitle: "Empowering fitness through incentivizing fitness",
       figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=13-6448&t=VHGAayvFbeYiKfFZ-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
-      imageUrl: "/lovable-uploads/b86cbf4f-e012-4094-b092-9aff693a2bc7.png"
+      imageUrl: "/lovable-uploads/b86cbf4f-e012-4094-b092-9aff693a2bc7.png",
+      isPasswordProtected: false
     },
     {
       title: "MetroGlide",
       subtitle: "Inclusive mobile app for effortless train ticket booking",
       figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/Untitled?page-id=13%3A966&node-id=13-6643&viewport=454%2C652%2C0.05&t=Xbh1iBoAscIwjhJB-1&scaling=scale-down-width&content-scaling=fixed",
-      imageUrl: "/lovable-uploads/eb135a10-1649-49aa-bb48-be5e4d73fb6b.png"
+      imageUrl: "/lovable-uploads/eb135a10-1649-49aa-bb48-be5e4d73fb6b.png",
+      isPasswordProtected: true
     },
     {
       title: "Nexxiot",
       subtitle: "Empowering Freight transport with realtime insights and enhanced safety",
       figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/Untitled?page-id=13%3A966&node-id=13-6860&viewport=440%2C157%2C0.04&t=829RM0DTplaV64Xd-1&scaling=scale-down-width&content-scaling=fixed",
-      imageUrl: "/lovable-uploads/5105f7a4-5d10-4add-9a4c-2a21f283391d.png"
+      imageUrl: "/lovable-uploads/5105f7a4-5d10-4add-9a4c-2a21f283391d.png",
+      isPasswordProtected: true
     },
     {
       title: "Wealthy",
       subtitle: "A new generation mobile app created for financial advisors and their clients",
       figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/Untitled?page-id=13%3A966&node-id=13-11479&viewport=371%2C259%2C0.02&t=mvGzCWpvNXYqGeX7-1&scaling=scale-down-width&content-scaling=fixed",
-      imageUrl: "/lovable-uploads/9395b6a1-1290-48d1-b569-6a9792cc4650.png"
+      imageUrl: "/lovable-uploads/9395b6a1-1290-48d1-b569-6a9792cc4650.png",
+      isPasswordProtected: true
     },
     {
       title: "Mercedes Me",
       subtitle: "An inhouse app for the customers and users of Mercedes",
       figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/Untitled?page-id=13%3A966&node-id=13-15721&viewport=371%2C259%2C0.02&t=mvGzCWpvNXYqGeX7-1&scaling=scale-down-width&content-scaling=fixed",
-      imageUrl: "/lovable-uploads/51dc41d9-ec5d-43b2-a9d0-05de7718798a.png"
+      imageUrl: "/lovable-uploads/51dc41d9-ec5d-43b2-a9d0-05de7718798a.png",
+      isPasswordProtected: true
     },
     {
       title: "Dialysis Pro",
       subtitle: "A cloud based digital management system",
       figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/Untitled?page-id=13%3A966&node-id=14-2354&viewport=371%2C259%2C0.02&t=mvGzCWpvNXYqGeX7-1&scaling=scale-down-width&content-scaling=fixed",
-      imageUrl: "/lovable-uploads/6f28a0ee-603b-49b7-8677-02d6d27a92b7.png"
+      imageUrl: "/lovable-uploads/6f28a0ee-603b-49b7-8677-02d6d27a92b7.png",
+      isPasswordProtected: true
     },
     {
       title: "Argus: Space debris monitoring and removal system",
       subtitle: "Advanced space technology for orbital debris tracking and removal",
       figmaLink: "https://www.figma.com/deck/TNeD4yYPuGxQ0GUrGWhHEI/Untitled?node-id=1-42&t=l9v0ML0xX4exZahV-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
-      imageUrl: "/lovable-uploads/d7c60fbe-1a16-426f-96cc-229528fac55f.png"
+      imageUrl: "/lovable-uploads/d7c60fbe-1a16-426f-96cc-229528fac55f.png",
+      isPasswordProtected: true
     }
   ];
 
@@ -101,7 +110,7 @@ const ProjectsSection = () => {
                 subtitle={project.subtitle}
                 link={project.figmaLink}
                 imageUrl={project.imageUrl}
-                isInternal={true}
+                isInternal={project.isPasswordProtected}
                 onClick={() => handleProjectClick(project.figmaLink)}
               />
             ))}
