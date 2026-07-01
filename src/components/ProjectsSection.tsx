@@ -89,7 +89,7 @@ const ProjectsSection = () => {
                 subtitle={project.subtitle}
                 link={project.figmaLink}
                 imageUrl={project.imageUrl}
-                isInternal={true}
+                isInternal={project.isPasswordProtected}
                 onClick={() => handleProjectClick(project.figmaLink)}
               />
             ))}
