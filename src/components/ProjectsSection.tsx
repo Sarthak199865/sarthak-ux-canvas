@@ -18,28 +18,28 @@ const ProjectsSection = () => {
     {
       title: "MEET.O",
       subtitle: "Seamless connections, effortless bookings",
-      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=199-5689&viewport=177%2C130%2C0.02&t=8pbfEsRb1QqNVNal-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
+      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=199-5689&viewport=1027%2C119%2C0.28&t=Lka6LeTDpumEsPAk-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
       imageUrl: "/lovable-uploads/84278395-6524-4982-8b2d-df6387690e12.png",
       isPasswordProtected: false
     },
     {
       title: "Medicare",
       subtitle: "Empowering fitness through incentivizing fitness",
-      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=13-6448&viewport=562%2C141%2C0.04&t=IMOkf0r5CrIw0iNd-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
+      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=13-6448&viewport=545%2C173%2C0.04&t=zDSFUSrCk6SlVhQt-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
       imageUrl: "/lovable-uploads/b86cbf4f-e012-4094-b092-9aff693a2bc7.png",
       isPasswordProtected: false
     },
     {
       title: "Nexxiot",
       subtitle: "Empowering Freight transport with realtime insights and enhanced safety",
-      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/Untitled?page-id=13%3A966&node-id=13-6860&viewport=440%2C157%2C0.04&t=829RM0DTplaV64Xd-1&scaling=scale-down-width&content-scaling=fixed",
+      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=13-6860&viewport=545%2C173%2C0.04&t=5j0A0f2gOoOD1afr-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
       imageUrl: "/lovable-uploads/5105f7a4-5d10-4add-9a4c-2a21f283391d.png",
       isPasswordProtected: true
     },
     {
       title: "Dialysis Pro",
       subtitle: "A cloud based digital management system",
-      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/Untitled?page-id=13%3A966&node-id=14-2354&viewport=371%2C259%2C0.02&t=mvGzCWpvNXYqGeX7-1&scaling=scale-down-width&content-scaling=fixed",
+      figmaLink: "https://www.figma.com/proto/J6wAq7hp3eO0AJYc6RP2pb/All-new-Case-studies-for-Portfolio?node-id=14-2354&viewport=225%2C173%2C0.04&t=ptj7xTXwmld4sDgW-1&scaling=scale-down-width&content-scaling=fixed&page-id=13%3A966",
       imageUrl: "/lovable-uploads/6f28a0ee-603b-49b7-8677-02d6d27a92b7.png",
       isPasswordProtected: true
     },
