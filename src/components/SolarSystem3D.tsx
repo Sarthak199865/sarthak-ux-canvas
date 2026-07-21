@@ -55,12 +55,31 @@ const Sun = () => {
   );
 };
 
+const isWebGLAvailable = () => {
+  if (typeof window === 'undefined') return false;
+  try {
+    const canvas = document.createElement('canvas');
+    return !!(
+      window.WebGLRenderingContext &&
+      (canvas.getContext('webgl2') || canvas.getContext('webgl') || canvas.getContext('experimental-webgl'))
+    );
+  } catch {
+    return false;
+  }
+};
+
 const SolarSystem3D = () => {
+  if (!isWebGLAvailable()) {
+    return null;
+  }
   return (
     <div className="absolute inset-0">
       <Canvas
         camera={{ position: [0, 15, 25], fov: 45 }}
         style={{ background: 'transparent' }}
+        onCreated={({ gl }) => {
+          gl.domElement.addEventListener('webglcontextlost', (e) => e.preventDefault());
+        }}
       >
         <ambientLight intensity={0.1} />
         
